@@ -9,6 +9,8 @@
 *[Oracle VM](https://www.virtualbox.org/wiki/Downloads)*
 
 ##### How to install Ubuntu Server on Oracle VM:
+*[How to Install Ubuntu 20.04 LTS on VirtualBox in Windows 10](https://www.youtube.com/watch?v=x5MhydijWmc)*
+
 New:
 - Change name 
 - Choose folder 
