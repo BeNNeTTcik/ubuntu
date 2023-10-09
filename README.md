@@ -9,5 +9,14 @@
 *[Oracle VM](https://www.virtualbox.org/wiki/Downloads)*
 
 ##### How to install Ubuntu Server on Oracle VM:
-New -> ![image](https://github.com/BeNNeTTcik/ubuntu/assets/42866234/89834e7f-a8ca-4f52-b507-3245ee75aac7)
+New:
+-> Change name 
+-> Choose folder 
+-> Type: Linux
+-> Version: Ubuntu 64
+-> Memory: 4096 MB
+-> Create a virtual hard disk
+-> PRESS CREATE
+
+![image](https://github.com/BeNNeTTcik/ubuntu/assets/42866234/89834e7f-a8ca-4f52-b507-3245ee75aac7)
  
