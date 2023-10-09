@@ -3,7 +3,7 @@
 ## 2. Install apache.
 
 
-### 1.Startup files:
+### 1. Startup files:
 
 #### Link to download Ubuntu server: 
 *[Ubuntu Server 20.04.3 LTS](https://ubuntu.com/download/server)* 
