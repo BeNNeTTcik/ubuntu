@@ -32,3 +32,5 @@
 
 After installtion use login and password and enter the system. READY!!!
 ![image](https://github.com/BeNNeTTcik/ubuntu/assets/42866234/ca14b95c-8087-41d0-82fa-c63f393fd292)
+
+### 2. Install apache.
