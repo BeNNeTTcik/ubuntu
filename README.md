@@ -2,5 +2,4 @@
 
 ## Startup configuration files:
 
-#### Link to download Ubuntu server:
-<https://ubuntu.com/download/server>
+#### Link to download Ubuntu server: <https://ubuntu.com/download/server>
