@@ -1,6 +1,6 @@
 # ubuntu Apache2 project
 ## 1. Startup files.
-## 2. Install apache.
+## 2. Install apache2.
 
 
 ### 1. Startup files:
@@ -33,4 +33,13 @@
 After installtion use login and password and enter the system. READY!!!
 ![image](https://github.com/BeNNeTTcik/ubuntu/assets/42866234/ca14b95c-8087-41d0-82fa-c63f393fd292)
 
-### 2. Install apache.
+### 2. Install apache2.
+Before installetion apache2 on server, we should update software on VM (Virtual Machine). Use code below to update the software.
+```sudo apt update```
+Next step is install apache2 on server. Use code below:
+```sudo apt install apache2```
+You will see information about the memory that will be used for the installation and of course type: "y" to continue the installation.
+
+**Basic information about Apache2 and directories, which is used.**
+
+Whole website are storage in ```/var/www/html```. Directory to Virtual Host is ```/etc/apache2/sites-enabled```. Inside you will find a file called **000-default.conf** which can be modified with "vi" or "nano" (```sudo apt install nano``` before use).
