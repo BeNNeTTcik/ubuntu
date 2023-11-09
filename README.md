@@ -43,3 +43,7 @@ You will see information about the memory that will be used for the installation
 **Basic information about Apache2 and directories, which is used.**
 
 Whole website are storage in ```/var/www/html```. Directory to Virtual Host is ```/etc/apache2/sites-enabled```. Virtual Host allows you to split different websites that are located under the same IP address. Inside you will find a file called **000-default.conf**, which can be modified with "vi" or "nano" (```sudo apt install nano``` before use).
+
+SSL
+
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/410300b3-4d7f-434c-8386-25f4b03ed6e2)
