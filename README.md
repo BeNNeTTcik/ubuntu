@@ -55,11 +55,11 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 
 ## Userdir configuration: <a name="userdir"></a>
 
-Before configuration we should have user on the VM. To add user use this commend ```sudo adduser <name of the user>```. 
+Before configuration we should have user on the VM. To add user use this commend ```sudo adduser <name of the user>```.\
 Configuration userdir:\
 ```su $<name of created user>``` - we change root client on user client.\
 ```mkdir ./public_html && chmod 755 ./public_html``` - in home catalog we create a new folder and change folder permissions on 755.\
-```exit``` - leave from user client to root client.\
+```exit``` - leave from user client to root client.
 
 SSL
 
