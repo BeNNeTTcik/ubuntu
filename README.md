@@ -1,10 +1,10 @@
 # ubuntu Apache2 project
- 1. [Startup files.](#Startup-files)
- 2. [Install apache2](#Install-apache2)
- 3. [Additional Modules](#Additional-moduels)
+ 1. [Startup files.](#start)
+ 2. [Install apache2](#install)
+ 3. [Additional Modules](#moduels)
 
 
-### 1. Startup files:
+### 1. Startup files: <a name="start"></a>
 
 #### Link to download Ubuntu server: 
 *[Ubuntu Server 20.04.3 LTS](https://ubuntu.com/download/server)* 
@@ -34,7 +34,7 @@
 After installtion use login and password and enter the system. READY!!!
 ![image](https://github.com/BeNNeTTcik/ubuntu/assets/42866234/ca14b95c-8087-41d0-82fa-c63f393fd292)
 
-### 2. Install apache2.
+### 2. Install apache2. <a name="install"></a>
 Before installetion apache2 on server, we should update software on VM (Virtual Machine). Use code below to update the software.
 ```sudo apt update```
 Next step is install apache2 on server. Use code below:
@@ -45,7 +45,7 @@ You will see information about the memory that will be used for the installation
 
 Whole website are storage in ```/var/www/html```. Directory to Virtual Host is ```/etc/apache2/sites-enabled```. Virtual Host allows you to split different websites that are located under the same IP address. Inside you will find a file called **000-default.conf**, which can be modified with "vi" or "nano" (```sudo apt install nano``` before use).
 
-### 3. Additional moduels:
+### 3. Additional moduels: <a name="modules"></a>
 
 SSL
 
