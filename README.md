@@ -49,11 +49,17 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 
 | Modul   | Installion script       | More informations |
 |---------|----------------------|-------------------|
-| userdir | sudo a2enmod userdir |                   |
+| [userdir](#userdir) | sudo a2enmod userdir |                   |
 | rewrite | sudo a2enmod rewrite |                   |
 | ssl     | sudo a2enmod ssl     |                   |
 
+## Userdir configuration: <a name="userdir"></a>
 
+Before configuration we should have user on the VM. To add user use this commend ```sudo adduser <name of the user>```. 
+Configuration:
+```su $<name of created user>``` - we change root client on user client.
+```mkdir ./public_html && chmod 755 ./public_html``` - in home catalog we create a new folder and change folder permissions on 755.
+```exit```
 
 SSL
 
