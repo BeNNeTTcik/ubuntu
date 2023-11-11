@@ -47,7 +47,7 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 
 ### 3. Additional modules: <a name="modules"></a>
 
-| Modul   | Installion script       | Short informations |
+| Module   | Installion script       | Short informations |
 |---------|----------------------|-------------------|
 | [userdir](#userdir) | sudo a2enmod userdir |      allowing multiple users to host content within the same origin, like http//domain.xyz/~user             |
 | [rewrite](#rewrite) | sudo a2enmod rewrite |     can be used to redirect one URL to another URL; allows manipulation of the entire URL address     | 
