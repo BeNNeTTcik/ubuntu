@@ -60,6 +60,9 @@ Configuration userdir:\
 ```su $<name of created user>``` - we change root client on user client.\
 ```mkdir ./public_html && chmod 755 ./public_html``` - in home catalog we create a new folder and change folder permissions on 755.\
 ```exit``` - leave from user client to root client.
+```service apache2 restart``` - restart apache2 services all the time after changes.
+
+trzeba stworzyz stroine index.php w public_html ale do sprawdzenia
 
 ## Rewrite configuration: <a name="rewrite"></a>
 
