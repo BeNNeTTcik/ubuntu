@@ -47,6 +47,14 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 
 ### 3. Additional modules: <a name="modules"></a>
 
+| Modul   | Installion script       | More informations |
+|---------|----------------------|-------------------|
+| userdir | sudo a2enmod userdir |                   |
+| rewrite | sudo a2enmod rewrite |                   |
+| ssl     | sudo a2enmod ssl     |                   |
+
+
+
 SSL
 
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/410300b3-4d7f-434c-8386-25f4b03ed6e2)
