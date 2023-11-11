@@ -1,5 +1,5 @@
 # ubuntu Apache2 project
-## 1. Startup files.
+## 1. [Startup files.](#1. Startup files:)
 ## 2. Install apache2.
 
 
@@ -43,6 +43,8 @@ You will see information about the memory that will be used for the installation
 **Basic information about Apache2 and directories, which is used.**
 
 Whole website are storage in ```/var/www/html```. Directory to Virtual Host is ```/etc/apache2/sites-enabled```. Virtual Host allows you to split different websites that are located under the same IP address. Inside you will find a file called **000-default.conf**, which can be modified with "vi" or "nano" (```sudo apt install nano``` before use).
+
+
 
 SSL
 
