@@ -47,10 +47,10 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 
 ### 3. Additional modules: <a name="modules"></a>
 
-| Modul   | Installion script       | More informations |
+| Modul   | Installion script       | Short informations |
 |---------|----------------------|-------------------|
 | [userdir](#userdir) | sudo a2enmod userdir |                   |
-| [rewrite](#rewrite) | sudo a2enmod rewrite |      *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)      |
+| [rewrite](#rewrite) | sudo a2enmod rewrite |          |
 | [ssl](#ssl)     | sudo a2enmod ssl     |                   |
 
 ## Userdir configuration: <a name="userdir"></a>
@@ -63,7 +63,7 @@ Configuration userdir:\
 
 ## Rewrite configuration: <a name="rewrite"></a>
 
-Good 
+Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
 ## SSL configuration: <a name="ssl"></a>
 
