@@ -1,5 +1,5 @@
 # ubuntu Apache2 project
- 1. [Startup files.] (#Startup files:)
+ 1. [Startup files.](#Startup files)
  2. Install apache2.
 
 
