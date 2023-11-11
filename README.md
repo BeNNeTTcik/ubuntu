@@ -50,8 +50,8 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 | Modul   | Installion script       | Short informations |
 |---------|----------------------|-------------------|
 | [userdir](#userdir) | sudo a2enmod userdir |      allowing multiple users to host content within the same origin, like http//domain.xyz/~user             |
-| [rewrite](#rewrite) | sudo a2enmod rewrite |          |
-| [ssl](#ssl)     | sudo a2enmod ssl     |                   |
+| [rewrite](#rewrite) | sudo a2enmod rewrite |     can be used to redirect one URL to another URL; allows manipulation of the entire URL address     | 
+| [ssl](#ssl)     | sudo a2enmod ssl     |           works on OpenSSL engine and provide the cryptography        |
 
 ## Userdir configuration: <a name="userdir"></a>
 
