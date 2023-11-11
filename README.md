@@ -50,8 +50,8 @@ Whole website are storage in ```/var/www/html```. Directory to Virtual Host is `
 | Modul   | Installion script       | More informations |
 |---------|----------------------|-------------------|
 | [userdir](#userdir) | sudo a2enmod userdir |                   |
-| rewrite | sudo a2enmod rewrite |                   |
-| ssl     | sudo a2enmod ssl     |                   |
+| [rewrite](#rewrite) | sudo a2enmod rewrite |                   |
+| [ssl](#ssl)     | sudo a2enmod ssl     |                   |
 
 ## Userdir configuration: <a name="userdir"></a>
 
@@ -61,6 +61,8 @@ Configuration userdir:\
 ```mkdir ./public_html && chmod 755 ./public_html``` - in home catalog we create a new folder and change folder permissions on 755.\
 ```exit``` - leave from user client to root client.
 
-SSL
+## Rewrite configuration: <a name="rewrite"></a>
+
+## SSL configuration: <a name="ssl></a>
 
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/410300b3-4d7f-434c-8386-25f4b03ed6e2)
