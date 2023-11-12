@@ -67,20 +67,18 @@ Configuration userdir:\
 ```service apache2 restart``` - restart apache2 services all the time after changes.\
 ```cd /home/<name of the user>/public_html``` - change directory on public_html, because we need create a new file "index.html".\
 ```vi index.html``` - u can replace "vi" on "nano" and create a file.\
-Inside file "index.html" write simple website to check configuration:
+Inside file "index.html" write simple website to check configuration:\
 ```<html>```\
 ``` <body>```\
- ``` <title> Mateusz Swiat </title>```\
+```  <title> Mateusz Swiat </title>```\
 ``` </body>```\
-```</html>```\
+```</html>```
 
 After all u should open website after ip or domain on your web browser:\
 In URL use IP to connect:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0fcc56a5-c390-4844-a2b8-b119465f2cf9)\
 In URL use domain name to connect:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/d9fa587a-db84-4efd-bc19-963453cc256f)\
-
-
 
 ## Rewrite configuration: <a name="rewrite"></a>
 
