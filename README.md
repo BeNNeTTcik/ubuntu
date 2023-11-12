@@ -46,7 +46,7 @@ You will see information about the memory that will be used for the installation
 Whole website are storage in ```/var/www/html```. Directory to Virtual Host is ```/etc/apache2/sites-enabled```. Virtual Host allows you to split different websites that are located under the same IP address. Inside you will find a file called **000-default.conf**, which can be modified with "vi" or "nano" (```sudo apt install nano``` before use).
 
 Create domain "www.mojastrona.pl" and connect domain with "index.html" use this commend: ```vi /etc/apache2/sites-enabled/000-default.conf```. You will see a file similar to the one below:
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/c6c34685-f3d1-4704-94d1-a989077ecb2f) Now we need to change "ServerAdmin" on www.mojastrona.pl. If u change the path of the "index.html" u should change this line on right path. Thats all u can leave form text editor. Remember to save changes.
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/c6c34685-f3d1-4704-94d1-a989077ecb2f)\ Now we need to change "ServerAdmin" on www.mojastrona.pl. If u change the path of the "index.html" u should change this line on right path. Thats all u can leave form text editor. Remember to save changes.
 
 ### 3. Additional modules: <a name="modules"></a>
 
