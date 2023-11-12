@@ -75,9 +75,9 @@ Inside file "index.html" write simple website to check configuration:
 
 After all u should open website after ip or domain on your web browser:\
 In URL use IP to connect:\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0fcc56a5-c390-4844-a2b8-b119465f2cf9)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0fcc56a5-c390-4844-a2b8-b119465f2cf9)\
 In URL use domain name to connect:\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/d9fa587a-db84-4efd-bc19-963453cc256f)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/d9fa587a-db84-4efd-bc19-963453cc256f)\
 
 
 
