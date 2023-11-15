@@ -1,8 +1,8 @@
 <VirtualHost *:80>
-Serveradmin admin@example.com
-ServerName example.com
-ServerAlias www.example.com
-DocumentRoot /var/www/example.com/public_html/
+Serveradmin admin@mojastrona.pl
+ServerName mojastrona.pl
+ServerAlias www.mojastrona.pl
+DocumentRoot /var/www/mojastrona.pl/public_html/
 ErrorLog ${APACHE_LOG_DIR}/error.log
 CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
