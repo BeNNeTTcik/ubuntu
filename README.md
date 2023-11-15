@@ -41,6 +41,16 @@ Next step is install apache2 on server. Use code below:
 ```sudo apt install apache2```
 You will see information about the memory that will be used for the installation and of course type: "y" to continue the installation.
 
+CORE THING!!!
+If u use VM VirtualBox:
+Settings -> Network -> Connected to: Host Only -> Name:VirtualBox Host-Only Ethernet Adapter -> Listening mode: Allow Everyone.
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/4d05faa0-8aee-4dd7-9cc6-d3fbcb649f49)
+
+Define two domain: 
+ - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
+ - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
+
+
 **Basic information about Apache2 and directories, which is used.**
 
 Whole website are storage in ```/var/www/html```. Directory to Virtual Host is ```/etc/apache2/sites-enabled```. Virtual Host allows you to split different websites that are located under the same IP address. Inside you will find a file called **000-default.conf**, which can be modified with "vi" or "nano" (```sudo apt install nano``` before use).
