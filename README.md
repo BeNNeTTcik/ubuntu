@@ -94,7 +94,7 @@ In URL use domain name to connect:\
 
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
-In Virtual Host in directory: "/etc/apache2/sites-avaliable/mojastrona.pl.conf" we need add after DocumentRoot: 
+In directory: "/etc/apache2/sites-avaliable/" we need modify a file "mojastrona.pl.conf" by "vi/nano":\
 ```
 ...
 DocummentRoot /var/www/mojastrona.pl/public_html/
