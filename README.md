@@ -85,5 +85,5 @@ In URL use domain name to connect:\
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
 ## SSL configuration: <a name="ssl"></a>
-
+![How configure ssl](https://www.youtube.com/watch?v=IH9MmUQiOI4)
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/410300b3-4d7f-434c-8386-25f4b03ed6e2)
