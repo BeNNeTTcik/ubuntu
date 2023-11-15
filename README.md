@@ -95,9 +95,11 @@ In URL use domain name to connect:\
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
 ## SSL configuration: <a name="ssl"></a>
-![How configure ssl](https://www.youtube.com/watch?v=IH9MmUQiOI4)
-OR 
-Commmends:
+Tutorials:
+![How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)
+![SSL Configuration](https://www.youtube.com/watch?v=rgBY6phztlk)
+
+Commmends to configure 2 domains (http and https):
 ```sudo su``` - root permissions\
 ```mkdir -p /var/www/example.com/public_html``` - create first domain directory\
 ```mkdir -p /var/www/test.com/public_html``` - create secound ssl domain directory\
