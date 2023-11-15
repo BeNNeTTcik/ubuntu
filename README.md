@@ -94,6 +94,18 @@ In URL use domain name to connect:\
 
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
+In Virtual Host in directory: "/etc/apache2/sites-avaliable/mojastrona.pl.conf" we need add after DocumentRoot: 
+```
+...
+DocummentRoot /var/www/mojastrona.pl/public_html/
+<Directory /var/www/mojastrona.pl/public_html>
+   Options Indexes FollowSymLinks MultiViews
+   AllowOverride All
+   Require all granted
+</Directory>
+...
+```
+
 ## SSL configuration: <a name="ssl"></a>
 Tutorials:\
 ![How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)\
