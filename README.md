@@ -88,32 +88,31 @@ Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.dig
 ![How configure ssl](https://www.youtube.com/watch?v=IH9MmUQiOI4)
 OR 
 Commmends:
-```sudo su```\
-```sudo mkdir -p /var/www/example.com/public_html```\
-```sudo mkdir -p /var/www/test.com/public_html```\
-```sudo chmod -R 755 /var/www```\
-```cd /var/www```\
-```vi example.com/public_html/index.html```\
-```<h1>Example.com ez</h1>```\
-```vi test.com/public_html/index.html```\
-```<h1>test.com ez</h1>```\
-```cd /etc/apache2/sites-avaliable/```\
-```cp ./000-default.conf example.com.conf```\
-```cp ./default-ssl.conf test.com.conf```\
-```vi example.com.conf```\
-Check file -> example.com.conf\
+```sudo su``` - root permissions\
+```mkdir -p /var/www/example.com/public_html``` - create first domain directory\
+```mkdir -p /var/www/test.com/public_html``` - create secound ssl domain directory\
+```chmod -R 755 /var/www``` - "R" all files and directory got permission 755\
+```cd /var/www``` - move to /var/www\
+```vi ./example.com/public_html/index.html``` - create website for domain example.com\
+```<h1>Example.com ez</h1>``` - website\
+```vi ./test.com/public_html/index.html```  - create website for domain test.com\
+```<h1>test.com ez</h1>``` - website\
+```cd /etc/apache2/sites-avaliable/``` - move to /etc/apache2/sites-avaliable\
+```cp ./000-default.conf example.com.conf``` - copy 000-default.conf to example.com.conf\
+```cp ./default-ssl.conf test.com.conf```- copy default-ssl.conf to test.com.conf\
+```vi example.com.conf``` - edit VirtualHost\
+Check file in repositories -> example.com.conf\
 ```vi test.com.conf```\
-Check file -> test.com.conf\
-```a2ensite example.com.conf```\
-```a2ensite test.com.conf```\
-```a2dissite 000-default.conf```\
-```service apache2 restart```\
-```cd ..```\
-```mkdir ssl```\
-```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt```\
+Check file in repositories -> test.com.conf\
+```a2ensite example.com.conf``` - activation VirtualHost for domain example.com\
+```a2ensite test.com.conf``` - activation VirtualHost for domain test.com\
+```a2dissite 000-default.conf``` - deactivation VirtualHost\
+```service apache2 restart``` - restart apache2\
+```cd ..``` - go back to the previous directory \
+```mkdir ssl``` - create ssl directory\
+```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt``` - create certificate\
 Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@server.local
-At the END, define two domain:\ - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
+At the END, define two domain: \ - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
  - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/77c22855-cc66-494a-84a0-a322a82df28e)
 
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/410300b3-4d7f-434c-8386-25f4b03ed6e2)
