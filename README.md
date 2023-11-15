@@ -41,8 +41,8 @@ Next step is install apache2 on server. Use code below:
 ```sudo apt install apache2```
 You will see information about the memory that will be used for the installation and of course type: "y" to continue the installation.
 
-CORE THING!!!
-If u use VM VirtualBox:
+CORE THING!!!\
+If u use VM VirtualBox go to:
 Settings -> Network -> Connected to: Host Only -> Name:VirtualBox Host-Only Ethernet Adapter -> Listening mode: Allow Everyone.
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/4d05faa0-8aee-4dd7-9cc6-d3fbcb649f49)
 
