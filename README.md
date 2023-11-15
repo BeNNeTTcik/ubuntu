@@ -78,11 +78,13 @@ Configuration userdir:\
 ```cd /home/<name of the user>/public_html``` - change directory on public_html, because we need create a new file "index.html".\
 ```vi index.html``` - u can replace "vi" on "nano" and create a file.\
 Inside file "index.html" write simple website to check configuration:\
-```<html>```\
-``` <body>```\
-```  <title> Mateusz Swiat </title>```\
-``` </body>```\
-```</html>```
+```
+<html>
+ <body>
+  <title> Mateusz Swiat </title>
+ </body>
+</html>
+```
 
 After all u should open website after ip or domain on your web browser:\
 In URL use IP to connect:\
@@ -105,6 +107,13 @@ DocummentRoot /var/www/mojastrona.pl/public_html/
 </Directory>
 ...
 ```
+```vi /var/www/mojastrona.pl/public_html/.htaccess``` - create new file which will attend in mod_rewrite\ 
+Add this inside ".htaccess":\
+```
+RewriteEngine on
+RewriteRule ^index$ index.html [NC]
+```
+Now try in URL write: "http://mojastrona.pl/index" this URL will be rewrite to "http://mojastrona.pl/index.html". It means mod_rewrite works.
 
 ## SSL configuration: <a name="ssl"></a>
 Tutorials:\
