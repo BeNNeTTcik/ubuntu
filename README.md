@@ -88,29 +88,29 @@ Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.dig
 ![How configure ssl](https://www.youtube.com/watch?v=IH9MmUQiOI4)
 OR 
 Commmends:
-```sudo su```
-```sudo mkdir -p /var/www/example.com/public_html```
-```sudo mkdir -p /var/www/test.com/public_html```
-```sudo chmod -R 755 /var/www```
-```cd /var/www```
-```vi example.com/public_html/index.html```
-```<h1>Example.com ez</h1>```
-```vi test.com/public_html/index.html```
-```<h1>test.com ez</h1>```
-```cd /etc/apache2/sites-avaliable/```
-```cp ./000-default.conf example.com.conf```
-```cp ./default-ssl.conf test.com.conf```
-```vi example.com.conf```
-Check file -> example.com.conf 
-```vi test.com.conf```
-Check file -> test.com.conf 
-```a2ensite example.com.conf```
-```a2ensite test.com.conf```
-```a2dissite 000-default.conf```
-```service apache2 restart```
-```cd ..```
-```mkdir ssl```
-```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt```
+```sudo su```\
+```sudo mkdir -p /var/www/example.com/public_html```\
+```sudo mkdir -p /var/www/test.com/public_html```\
+```sudo chmod -R 755 /var/www```\
+```cd /var/www```\
+```vi example.com/public_html/index.html```\
+```<h1>Example.com ez</h1>```\
+```vi test.com/public_html/index.html```\
+```<h1>test.com ez</h1>```\
+```cd /etc/apache2/sites-avaliable/```\
+```cp ./000-default.conf example.com.conf```\
+```cp ./default-ssl.conf test.com.conf```\
+```vi example.com.conf```\
+Check file -> example.com.conf\
+```vi test.com.conf```\
+Check file -> test.com.conf\
+```a2ensite example.com.conf```\
+```a2ensite test.com.conf```\
+```a2dissite 000-default.conf```\
+```service apache2 restart```\
+```cd ..```\
+```mkdir ssl```\
+```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt```\
 Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@server.local
 At the END, define two domain: - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
  - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
