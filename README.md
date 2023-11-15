@@ -115,5 +115,8 @@ Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdyn
 At the END, define two domain: 
  - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
  - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/77c22855-cc66-494a-84a0-a322a82df28e)
+
+Check configuration:
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/3627b289-4863-4173-9c3c-ef2b86418c80)
+
 
