@@ -124,9 +124,7 @@ Check file in repositories -> test.com.conf\
 ```mkdir ssl``` - create ssl directory\
 ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt``` - create certificate\
 Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@server.local\
-At the END, define two domain: 
- - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
- - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
+Time to check on your web browser: http://example.com and https://test.com\
 
 Check configuration:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/3627b289-4863-4173-9c3c-ef2b86418c80)
