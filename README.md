@@ -112,7 +112,7 @@ Check file -> test.com.conf\
 ```mkdir ssl```\
 ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt```\
 Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@server.local
-At the END, define two domain: - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
+At the END, define two domain:\ - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
  - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/77c22855-cc66-494a-84a0-a322a82df28e)
 
