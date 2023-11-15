@@ -2,6 +2,7 @@
  1. [Startup files.](#start)
  2. [Install apache2](#install)
  3. [Additional Modules](#modules)
+ 4. [MySQL](#mysql)
 
 
 ### 1. Startup files: <a name="start"></a>
@@ -67,7 +68,7 @@ Now we need to change "ServerAdmin" on www.mojastrona.pl. If u change the path o
 | [rewrite](#rewrite) | sudo a2enmod rewrite |     can be used to redirect one URL to another URL; allows manipulation of the entire URL address     | 
 | [ssl](#ssl)     | sudo a2enmod ssl     |           works on OpenSSL engine and provide the cryptography        |
 
-## Userdir configuration: <a name="userdir"></a>
+#### Userdir configuration: <a name="userdir"></a>
 
 Before configuration we should have user on the VM. To add user use this commend ```sudo adduser <name of the user>```.\
 Configuration userdir:\
@@ -92,7 +93,7 @@ In URL use IP to connect:\
 In URL use domain name to connect:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/d9fa587a-db84-4efd-bc19-963453cc256f)\
 
-## Rewrite configuration: <a name="rewrite"></a>
+#### Rewrite configuration: <a name="rewrite"></a>
 
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
@@ -115,7 +116,7 @@ RewriteRule ^index$ index.html [NC]
 ```
 Now try in URL write: "http://mojastrona.pl/index" this URL will be rewrite to "http://mojastrona.pl/index.html". It means mod_rewrite works.
 
-## SSL configuration: <a name="ssl"></a>
+#### SSL configuration: <a name="ssl"></a>
 Tutorials:\
 ![How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)\
 ![SSL Configuration](https://www.youtube.com/watch?v=rgBY6phztlk)\
@@ -150,4 +151,15 @@ Time to check on your web browser: http://example.com and https://test.com\
 Check configuration:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/3627b289-4863-4173-9c3c-ef2b86418c80)
 
+### 4. MySQL install and connect: <a name="mysql"></a>
 
+```sudo su``` - root permissions\
+```apt install mysql-server``` - install mysql-server\
+```systemctl enable mysql.service``` - add MySQL Server to auto-start after reboot\
+```systemctl start mysql.service``` - start MYSQL Server
+```status mysql.service``` - check status of the server\
+```mysql``` - connect to MySQL Server\
+```mysql> ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY '<f.g. admin>';``` - change the password of the root’s account\
+```mysql>exit``` - leave from MySQL Server\
+```mysql -u root -p``` - how connect on MySQL\
+```mysql_secure_installation``` - secure options on MySQL server for root and dif users.
