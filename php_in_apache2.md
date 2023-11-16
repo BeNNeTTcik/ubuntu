@@ -1,5 +1,6 @@
 1. Install PHP
 
 
-
-```sudo apt install php libapache2-mod-php``` 
+```sudo su```\
+```apt-get install php libapache2-mod-php```\
+```apt-get install php-mysql```\
