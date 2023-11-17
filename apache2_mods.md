@@ -63,6 +63,8 @@ Add this inside ".htaccess":\
 RewriteEngine on
 RewriteRule ^index$ index.html [NC]
 ```
+```service apache2 restart``` - restart apache2 services\
+
 Now try in URL write: "http://mojastrona.pl/index" this URL will be rewrite to "http://mojastrona.pl/index.html". It means mod_rewrite works.
 
 ### SSL configuration: <a name="ssl"></a>
@@ -75,7 +77,7 @@ If u don't know how to create two domains find README and title ["Create domains
 ```cd /etc/apache2``` - go to the directory /etc/apache2/\
 ```mkdir ssl``` - create ssl directory\
 ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt``` - create certificate\
-```cd /etc/apache2/sites-avaliable``` 
+```cd /etc/apache2/sites-avaliable``` - move to /etc/apache2/sites-avaliable\
 ```vi test.com.conf``` - edit VirtualHost for szyfrowana.pl\
 ```
 <IfModule mod_ssl.c>
@@ -99,8 +101,10 @@ If u don't know how to create two domains find README and title ["Create domains
 	</VirtualHost>
 </IfModule>
 ```
-Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@server.local\
-Time to check on your web browser: http://example.com and https://test.com\
+```service apache2 restart``` - restart apache2 services.\
+
+Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@szyfrowana.pl\
+Time to check on your web browser: http://mojastrona.pl and https://szyfrowana.pl\
 
 Check configuration:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/3627b289-4863-4173-9c3c-ef2b86418c80)
