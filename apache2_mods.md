@@ -4,7 +4,7 @@
 1.2. [rewrite](#rewrite)\
 1.3. [ssl](#ssl)
 
-1. Additional modules: <a name="modules"></a>
+## 1. Additional modules: <a name="modules"></a>
 
 | Module   | Installion script       | Short informations |
 |---------|----------------------|-------------------|
@@ -12,7 +12,7 @@
 | [rewrite](#rewrite) | sudo a2enmod rewrite |     can be used to redirect one URL to another URL; allows manipulation of the entire URL address     | 
 | [ssl](#ssl)     | sudo a2enmod ssl     |           works on OpenSSL engine and provide the cryptography        |
 
-#### Userdir configuration: <a name="userdir"></a>
+### Userdir configuration: <a name="userdir"></a>
 
 Before configuration we should have user on the VM. To add user use this commend ```sudo adduser <name of the user>```.\
 Configuration userdir:\
@@ -37,7 +37,7 @@ In URL use IP to connect:\
 In URL use domain name to connect:\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/d9fa587a-db84-4efd-bc19-963453cc256f)\
 
-#### Rewrite configuration: <a name="rewrite"></a>
+### Rewrite configuration: <a name="rewrite"></a>
 
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
@@ -60,7 +60,7 @@ RewriteRule ^index$ index.html [NC]
 ```
 Now try in URL write: "http://mojastrona.pl/index" this URL will be rewrite to "http://mojastrona.pl/index.html". It means mod_rewrite works.
 
-#### SSL configuration: <a name="ssl"></a>
+### SSL configuration: <a name="ssl"></a>
 Tutorials:\
 ![How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)\
 ![SSL Configuration](https://www.youtube.com/watch?v=rgBY6phztlk)\
