@@ -69,7 +69,7 @@ Now try in URL write: "http://mojastrona.pl/index" this URL will be rewrite to "
 
 ### SSL configuration: <a name="ssl"></a>
 Tutorials:\
-[SSL Configuration](https://www.youtube.com/watch?v=rgBY6phztlk)\
+[SSL Configuration](https://www.youtube.com/watch?v=rgBY6phztlk)
 
 Commmends to configure 2 domains (http and https):\
 If u don't know how to create two domains find README and title ["Create domains"](myLib/README.md) 
