@@ -2,7 +2,9 @@
  1. [Startup files.](#start)
  2. [Install apache2](#install)
  3. [Create domains](#create)
- 4. [MySQL](#mysql)
+ 4. [Apache2 Modules](apache2_mods.md)
+ 5. [Apache2 PHP](php_in_apache2.md)
+ 6. [MySQL](#mysql)
 
 
 ### 1. Startup files: <a name="start"></a>
