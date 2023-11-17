@@ -61,6 +61,9 @@ Now we need to change "ServerAdmin" on www.mojastrona.pl. If u change the path o
 
 ### 3. Create domains <a name="create"></a>
 
+Tutorial:\
+[How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)
+
 ```sudo su``` - root permissions\
 ```mkdir -p /var/www/mojastrona.pl/public_html``` - create first domain directory\
 ```mkdir -p /var/www/szyfrowana.pl/public_html``` - create secound ssl domain directory\
