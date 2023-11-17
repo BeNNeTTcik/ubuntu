@@ -41,16 +41,21 @@ In URL use domain name to connect:\
 
 Good tutorial *[How To Rewrite URLs with mod_rewrite for Apache](https://www.digitalocean.com/community/tutorials/how-to-rewrite-urls-with-mod_rewrite-for-apache-on-ubuntu-16-04)*
 
-In directory: "/etc/apache2/sites-avaliable/" we need modify a file "mojastrona.pl.conf" by "vi/nano":\
+In directory: "/etc/apache2/sites-avaliable/" we need modify a file "mojastrona.pl.conf" by "vi/nano" and the file should looks like this:\
 ```
-...
-DocummentRoot /var/www/mojastrona.pl/public_html/
-<Directory /var/www/mojastrona.pl/public_html>
-   Options Indexes FollowSymLinks MultiViews
-   AllowOverride All
-   Require all granted
-</Directory>
-...
+<VirtualHost *:80>
+	Serveradmin admin@mojastrona.pl
+	ServerName mojastrona.pl
+	ServerAlias www.mojastrona.pl
+	DocumentRoot /var/www/mojastrona.pl/public_html/
+	<Directory /var/www/mojastrona.pl/public_html>
+   		Options FollowSymLinks MultiViews
+   		AllowOverride All
+  		Require all granted
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
 ```
 ```vi /var/www/mojastrona.pl/public_html/.htaccess``` - create new file which will attend in mod_rewrite\ 
 Add this inside ".htaccess":\
@@ -74,7 +79,7 @@ If u don't know how to create two domains find README and title ["Create domains
 ```vi test.com.conf``` - edit VirtualHost for szyfrowana.pl\
 ```
 <IfModule mod_ssl.c>
- <VirtualHost _default_:443>
+ 	<VirtualHost _default_:443>
 		Serveradmin admin@szyfrowana.pl
 		ServerName szyfrowana.pl
 		ServerAlias www.szyfrowana.pl
