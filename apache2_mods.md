@@ -66,29 +66,34 @@ Tutorials:\
 ![SSL Configuration](https://www.youtube.com/watch?v=rgBY6phztlk)\
 
 Commmends to configure 2 domains (http and https):\
-```sudo su``` - root permissions\
-```mkdir -p /var/www/example.com/public_html``` - create first domain directory\
-```mkdir -p /var/www/test.com/public_html``` - create secound ssl domain directory\
-```chmod -R 755 /var/www``` - "R" all files and directory got permission 755\
-```cd /var/www``` - move to /var/www\
-```vi ./example.com/public_html/index.html``` - create website for domain example.com\
-```<h1>Example.com ez</h1>``` - website\
-```vi ./test.com/public_html/index.html```  - create website for domain test.com\
-```<h1>test.com ez</h1>``` - website\
-```cd /etc/apache2/sites-avaliable/``` - move to /etc/apache2/sites-avaliable\
-```cp ./000-default.conf example.com.conf``` - copy 000-default.conf to example.com.conf\
-```cp ./default-ssl.conf test.com.conf```- copy default-ssl.conf to test.com.conf\
-```vi example.com.conf``` - edit VirtualHost\
-Check file in repositories -> example.com.conf\
-```vi test.com.conf```\
-Check file in repositories -> test.com.conf\
-```a2ensite example.com.conf``` - activation VirtualHost for domain example.com\
-```a2ensite test.com.conf``` - activation VirtualHost for domain test.com\
-```a2dissite 000-default.conf``` - deactivation VirtualHost\
-```service apache2 restart``` - restart apache2\
-```cd ..``` - go back to the previous directory \
+If u don't know how to create two domains find README and title ["Create domains"](myLib/README.md) 
+```cd /etc/apache2``` - go to the directory /etc/apache2/\
 ```mkdir ssl``` - create ssl directory\
 ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/test.com.key -out /etc/apache2/ssl/test.com.crt``` - create certificate\
+```cd /etc/apache2/sites-avaliable``` 
+```vi test.com.conf``` - edit VirtualHost for szyfrowana.pl\
+```
+<IfModule mod_ssl.c>
+ <VirtualHost _default_:443>
+		Serveradmin admin@szyfrowana.pl
+		ServerName szyfrowana.pl
+		ServerAlias www.szyfrowana.pl
+		DocumentRoot /var/www/szyfrowana.pl/public_html/
+		ErrorLog ${APACHE_LOG_DIR}/error.log
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+		SSLEngine on
+		SSLCertificateFile /etc/apache2/ssl/szyfrowana.pl.crt
+		SSLCertificateKeyFile /etc/apache2/ssl/szyfrowana.pl.key
+		<FilesMatch "\.(cgi|shtml|phtml|php)$">
+			SSLOptions +StdEnvVars
+		</FilesMatch>
+		<Directory /usr/lib/cgi-bin>
+			SSLOptions +StdEnvVars
+		</Directory>
+		.........
+	</VirtualHost>
+</IfModule>
+```
 Rest paramiters are without matter beside COMMON NAME: f.g. PL, Pomeranian, Gdynia, MyOrg, MyOrg, test.com, webmaster@server.local\
 Time to check on your web browser: http://example.com and https://test.com\
 
