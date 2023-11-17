@@ -3,8 +3,8 @@
  2. [Install apache2](#install)
  3. [Create domains](#create)
  4. [Apache2 Modules](apache2_mods.md)
- 5. [Apache2 PHP](php_in_apache2.md)
- 6. [MySQL](#mysql)
+ 5. [Apache2 PHP](apache2_php.md)
+ 6. [Apache2 MySQL](apache2_MySQL.md)
 
 
 ### 1. Startup files: <a name="start"></a>
