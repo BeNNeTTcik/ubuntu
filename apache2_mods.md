@@ -4,7 +4,7 @@
 1.2. [rewrite](#rewrite)\
 1.3. [ssl](#ssl)
 
-## 1. Additional modules: <a name="modules"></a>
+## 1. Additional modules to Apache2 server: <a name="modules"></a>
 
 | Module   | Installion script       | Short informations |
 |---------|----------------------|-------------------|
