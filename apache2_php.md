@@ -1,12 +1,17 @@
-1. Install PHP
+# ubuntu Apache2 PHP7.4:
+1. [README](README.md)
+5. [Install PHP 7.4](#php)\
+5.1. [Install phpMyAdmin](#phpmyadmin)
+5.2. [phpMyAdmin secure](#phpmyadminS)
 
 Everyone use PHP 7.4 becasue is stable. In PHP 8 is changing a lot, we get new scurity updates and the fix a lot of bugs. So, many servers use PHP 7.4 and I will use the same version.
 
-## Basic instalation and configuration:
+### 5. PHP7.4 Basic instalation and configuration [1]: <a name="php"></a>
 
-Tutorial: [Install Older Version PHP](https://linux.how2shout.com/how-to-install-php-7-4-on-ubuntu-22-04-lts-jammy-linux/)
+Tutorial:\
+[Install Older Version PHP](https://linux.how2shout.com/how-to-install-php-7-4-on-ubuntu-22-04-lts-jammy-linux/)
 
-```sudo su```\
+```sudo su``` - root permissions\
 ```apt install software-properties-common```
 ```add-apt-repository ppa:ondrej/php -y```
 ```apt-get install php7.4```\
@@ -20,10 +25,6 @@ Tutorial: [Install Older Version PHP](https://linux.how2shout.com/how-to-install
 ```systemctl restart apache2```
 ```<?php phpinfo() ?>```
 Now is time to check configuretion:
-
-
-
-
 ```apt-get install php7.4-mysql```\
 ```apt-get install php7.4-mysqli```\
 ```apt-get install php7.4-mbstring```\
@@ -31,7 +32,9 @@ Now is time to check configuretion:
 ```apt-get install php7.4-curl```\
 ```apt-get install php7.4-json```\
 ```apt-get install php7.4-zip```\
-## phpMyAdmin install version 7.4:
+
+
+### phpMyAdmin install version 7.4: <a name="phpmyadmin"></a>
 
 Tutorial: \
 [phpMyAdmin 7.4 install](https://www.bennetrichter.de/en/tutorials/apache2-php7-mariadb-phpmyadmin/)\
@@ -75,41 +78,8 @@ Alias /phpmyadmin /usr/share/phpmyadmin
 ```mkdir /usr/share/phpmyadmin/tmp/```\
 ```chown -R www-data:www-data /usr/share/phpmyadmin/tmp/```\
 ```systemctl reload apache2```\
+ 
+### 5.2. Securing phpMyAdmin:  <a name="phpmyadminS"></a>
 
-## Securing phpMyAdmin:
-
-## Webmin:
-
-```sudo su```\
-```cd /var```\
-```vi /etc/apt/sources.list``` - edit file source.list\
-```
-...
-deb http://download.webmin.com/download/repository sarge contrib
-...
-
-```
-```wget http://www.webmin.com/jcameron-key.asc```\
-**If u will have problem with the key:\
-```cat jcameron-key.asc | gpg --dearmor >/etc/apt/trusted.gpg.d/jcameron-key.gpg```\**
-```apt-get update```\
-```apt-get install webmin```\
-```ufw allow 10000/tcp``` - allow to communicate on port 10000\
-Check on web browser:
-https://ip_your_domain:10000
-
-
-
-## Usermin:
-
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/62d6aee8-70f5-4a5f-84d9-d3e8c577a52c)
-```sudo su```\
-```cd /var```\
-```wget https://sourceforge.net/projects/webadmin/files/usermin/2.005/usermin_2.005_all.deb```\
-```dpkg --install usermin_2.005_all.deb```\
-```systemctl start usermin```\
-```systemctl enable usermin```\
-```ufw allow 20000``` - allow to communicate on port 10000\
-
-Check on web browser:
-https://ip_your_domain:20000
+SOURCE: 
+[1. Install Older Version PHP](https://linux.how2shout.com/how-to-install-php-7-4-on-ubuntu-22-04-lts-jammy-linux/)
