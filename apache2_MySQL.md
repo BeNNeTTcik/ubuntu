@@ -1,3 +1,6 @@
+ 1. [README](README.md)\
+ 4. [MySQL](#mysql)
+
 ### 4. MySQL install and connect: <a name="mysql"></a>
 ```sudo su``` - root permissions\
 ```apt install mysql-server``` - install mysql-server\
