@@ -51,8 +51,8 @@ Settings -> Network -> Connected to: Host Only -> Name:VirtualBox Host-Only Ethe
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/4d05faa0-8aee-4dd7-9cc6-d3fbcb649f49)
 
 Define two domain: 
- - Linux - ```vi /etc/hosts``` add <IP> example.com www.example.com and <IP> test.com www.test.com. IP u can check by command: ```hostname -I```\
- - Windows C:\Windows\System32\drivers\etc\hosts add <IP> example.com www.example.com and <IP> test.com www.test.com.\
+ - Linux - ```vi /etc/hosts``` add <IP> mojastrona.pl www.mojastrona.pl and <IP> szyfrowana.pl www.szyfrowana.pl. IP u can check by command: ```hostname -I```\
+ - Windows C:\Windows\System32\drivers\etc\hosts add <IP> mojastrona.pl www.mojastrona.pl and <IP> szyfrowana.pl www.szyfrowana.pl.\
 
 **Basic information about Apache2 and directories, which is used.**
 
@@ -62,7 +62,7 @@ Create domain "www.mojastrona.pl" and connect domain with "index.html" use this 
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/c6c34685-f3d1-4704-94d1-a989077ecb2f)\ 
 Now we need to change "ServerAdmin" on www.mojastrona.pl. If u change the path of the "index.html" u should change this line on right path. Thats all u can leave form text editor. Remember to save changes.
 
-### 3. Create domains <a name="create"></a>
+### 3. Create domains [1] <a name="create"></a>
 
 Tutorial:\
 [How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)
@@ -100,3 +100,5 @@ DocummentRoot /var/www/szyfrowana.pl/public_html/
 ```a2dissite 000-default.conf``` - deactivation VirtualHost default\
 ```service apache2 restart``` - restart apache2 services\
 
+Source:
+[How configure 2 domains](https://www.youtube.com/watch?v=IH9MmUQiOI4)
