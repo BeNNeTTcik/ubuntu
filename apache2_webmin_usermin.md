@@ -23,7 +23,7 @@ deb http://download.webmin.com/download/repository sarge contrib
 
 ### Check on web browser:
 https://ip_your_domain:10000
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0f291f42-54bb-404d-9298-3da423ce0a09)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0f291f42-54bb-404d-9298-3da423ce0a09 =300x300)
 
 
 ### 6.b. Usermin install and configure [3]: <a name="usermin"></a>
