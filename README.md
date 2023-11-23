@@ -4,7 +4,8 @@
  3. [Create domains](#create)
  4. [Apache2 Modules](apache2_mods.md)
  5. [Apache2 PHP](apache2_php.md)
- 6. [Apache2 MySQL](apache2_MySQL.md)
+ 6. [Apache2 Webmin/Usermin](apache2_webmin_usermin.md)
+ 7. [Apache2 MySQL](apache2_MySQL.md)
 
 
 ### 1. Startup files: <a name="start"></a>
