@@ -15,3 +15,21 @@ To check the version of wordpress use this link [Wordpress Releases](https://wor
 ```cd ..``` - go back to previuse directory\
 ```chown www-data:www-data -R /var/www/html/wordpress/``` - change file permissions\
 ```chmod -R 755 /var/www/html/wordpress/``` - change file permissions\
+```vi /etc/apache2/sites-available/cmssite.pl.conf``` - my domain is cmssite.pl u reaplace it on your own domain\
+```
+<VirtualHost *:80>
+	Serveradmin admin@cmssite.pl
+	ServerName cmssite.pl
+	ServerAlias www.cmssite.pl
+	DocumentRoot /var/www/cmssite.pl/wordpress/
+	<Directory /var/www/mojastrona.pl/wordpress>
+   		Options FollowSymLinks
+   		AllowOverride All
+  		Require all granted
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+```
+```a2ensite wordpress.conf``` - activation VirtualHost for domain cmssite.pl\
+
