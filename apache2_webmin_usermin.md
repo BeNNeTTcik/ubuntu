@@ -27,9 +27,10 @@ https://ip_your_domain:10000
 
 ### 6.b. Usermin install and configure [3]: <a name="usermin"></a>
 
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/62d6aee8-70f5-4a5f-84d9-d3e8c577a52c)
 ```sudo su``` -  root permissions\
 ```cd /var``` - move to /var direcotry\
+Copy link to website "https://sourceforge.net/projects/webadmin/files/usermin/" when choose the newes version and enter the folder. Find file like usermin_<version>_all.deb
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/62d6aee8-70f5-4a5f-84d9-d3e8c577a52c)\
 ```wget https://sourceforge.net/projects/webadmin/files/usermin/2.005/usermin_2.005_all.deb``` - link to download usermin_2.005\
 ```dpkg --install usermin_2.005_all.deb``` - unpacking and install usermin\
 ```rm -R usermin_2.005_all.deb``` - remove installator files\
