@@ -31,7 +31,7 @@ https://ip_your_domain:10000\
 
 ```sudo su``` -  root permissions\
 ```cd /var``` - move to /var direcotry\
-Copy link to website "https://sourceforge.net/projects/webadmin/files/usermin/" when choose the newes version and enter the folder. Find file like usermin_<version>_all.deb
+Copy the link to the website "https://sourceforge.net/projects/webadmin/files/usermin/" after selecting the version and entering the folder. Find a file like usermin_<version>_all.deb and point to the file. In the lower left corner you will see the full download link for the files, like on image below.\
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/62d6aee8-70f5-4a5f-84d9-d3e8c577a52c)\
 ```wget https://sourceforge.net/projects/webadmin/files/usermin/2.005/usermin_2.005_all.deb``` - link to download usermin_2.005\
 ```dpkg --install usermin_2.005_all.deb``` - unpacking and install usermin\
