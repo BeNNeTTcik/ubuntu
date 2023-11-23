@@ -1,6 +1,6 @@
 # ubuntu Apache2 MySQL:
  1. [README](README.md)
- 7. [MySQL](#mysql)\
+ 7. [MySQL](#mysql)\ 
  7.1. [New User and DB](#user)
 
 ### 7. MySQL install and connect: <a name="mysql"></a>
