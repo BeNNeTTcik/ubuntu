@@ -1,7 +1,7 @@
  1. [README](README.md)
- 4. [MySQL](#mysql)
+ 7. [MySQL](#mysql)
 
-### 4. MySQL install and connect: <a name="mysql"></a>
+### 7. MySQL install and connect: <a name="mysql"></a>
 ```sudo su``` - root permissions\
 ```apt install mysql-server``` - install mysql-server\
 ```systemctl enable mysql.service``` - add MySQL Server to auto-start after reboot\
