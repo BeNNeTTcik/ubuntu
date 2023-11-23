@@ -1,7 +1,7 @@
  6.a. [Webmin](#webmin)\
  6.b. [Usermin](#usermin)
 
-### 6.a. Webmin install and connect [1][2]: <a name="webmin"></a>
+### 6.a. Webmin install and configure [1][2]: <a name="webmin"></a>
 
 ```sudo su``` - root permissions\
 ```cd /var``` - move to /var direcotry\
@@ -19,24 +19,30 @@ deb http://download.webmin.com/download/repository sarge contrib
 ```apt-get update``` - update the files\
 ```apt-get install webmin``` - install webmin\
 ```ufw allow 10000/tcp``` - allow to communicate on port 10000\
-Check on web browser:
-https://ip_your_domain:10000
 
-### 6.b. Usermin install and connect: <a name="usermin"></a>
+# Check on web browser:
+https://ip_your_domain:10000
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0f291f42-54bb-404d-9298-3da423ce0a09)
+
+
+### 6.b. Usermin install and configure [3]: <a name="usermin"></a>
 
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/62d6aee8-70f5-4a5f-84d9-d3e8c577a52c)
-```sudo su```\
-```cd /var```\
-```wget https://sourceforge.net/projects/webadmin/files/usermin/2.005/usermin_2.005_all.deb```\
-```dpkg --install usermin_2.005_all.deb```\
-```systemctl start usermin```\
-```systemctl enable usermin```\
+```sudo su``` -  root permissions\
+```cd /var``` - move to /var direcotry\
+```wget https://sourceforge.net/projects/webadmin/files/usermin/2.005/usermin_2.005_all.deb``` - link to download usermin_2.005\
+```dpkg --install usermin_2.005_all.deb``` - unpacking and install usermin\
+```rm -R usermin_2.005_all.deb``` - remove installator files\
+```systemctl start usermin``` - start usermin\
 ```ufw allow 20000``` - allow to communicate on port 10000\
 
-Check on web browser:
+# Check on web browser:
 https://ip_your_domain:20000
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/a5b18335-e4b5-4829-aefc-1a63427ca9de)
+
 
 
 SOURCE:
 [1. Install webmin - Tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-webmin-on-ubuntu-16-04)
 [2. Deprecated trusted.pgp](https://github.com/webmin/webmin/issues/1629)
+[3. Install usermin - Tutorial](https://idroot.us/install-usermin-ubuntu-20-04/)
