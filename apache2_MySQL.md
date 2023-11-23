@@ -2,7 +2,7 @@
 ```sudo su``` - root permissions\
 ```apt install mysql-server``` - install mysql-server\
 ```systemctl enable mysql.service``` - add MySQL Server to auto-start after reboot\
-```systemctl start mysql.service``` - start MYSQL Server
+```systemctl start mysql.service``` - start MYSQL Server\
 ```status mysql.service``` - check status of the server\
 ```mysql``` - connect to MySQL Server\
 ```mysql> ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY '<f.g. admin>';``` - change the password of the root’s account\
