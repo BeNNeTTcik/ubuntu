@@ -21,7 +21,7 @@ deb http://download.webmin.com/download/repository sarge contrib
 ```apt-get install webmin``` - install webmin\
 ```ufw allow 10000/tcp``` - allow to communicate on port 10000\
 
-# Check on web browser:
+### Check on web browser:
 https://ip_your_domain:10000
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0f291f42-54bb-404d-9298-3da423ce0a09)
 
@@ -38,7 +38,7 @@ Copy link to website "https://sourceforge.net/projects/webadmin/files/usermin/" 
 ```systemctl start usermin``` - start usermin\
 ```ufw allow 20000``` - allow to communicate on port 10000\
 
-# Check on web browser:
+### Check on web browser:
 https://ip_your_domain:20000
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/a5b18335-e4b5-4829-aefc-1a63427ca9de)
 
