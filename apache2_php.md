@@ -1,8 +1,8 @@
 # ubuntu Apache2 PHP7.4:
 1. [README](README.md)
 5. [Install PHP 7.4](#php)\
-5.1. [Install phpMyAdmin](#phpmyadmin)
-5.2. [phpMyAdmin secure](#phpmyadminS)
+5.1. [Install phpMyAdmin](#phpmyadmin)\
+5.2. [phpMyAdmin secure](#phpmyadminS)\
 
 Everyone use PHP 7.4 becasue is stable. In PHP 8 is changing a lot, we get new scurity updates and the fix a lot of bugs. So, many servers use PHP 7.4 and I will use the same version.
 
