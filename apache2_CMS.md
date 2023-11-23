@@ -34,17 +34,17 @@ To check your WordPress version, use this link [WordPress Versions](https://word
 ```a2ensite wordpress.conf``` - activation VirtualHost for domain cmssite.pl\
 ```systemctl reload apache2``` - reload apache2 server\
 
-### Check on web browser:\
-http://cmssite.pl\
+### Check on web browser:
+http://cmssite.pl \
 Database configuration, when u don't have DB go to [MySQL](apache2_MySQL.md), then find "New User and DB" and follow the instructions. I used my DB like on image below.\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/6ebb9bc2-469b-4d11-bf6a-a05b25b24b57)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/6ebb9bc2-469b-4d11-bf6a-a05b25b24b57)\
 Create yourwebsite, admin and password to administrate website.\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/841428d3-b5fc-4a34-8e91-5681bbab77e0)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/841428d3-b5fc-4a34-8e91-5681bbab77e0)\
 Log in.\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0d41bab2-a468-49b7-9f53-4e78529b7f5e)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/0d41bab2-a468-49b7-9f53-4e78529b7f5e)\
 Welcome on WordPress Dashboard.\
-![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/260e2ec1-620d-430b-9b4e-92e38684b974)
+![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/260e2ec1-620d-430b-9b4e-92e38684b974)\
 
 
-SOURCE:
+SOURCE:\
 [Wordpress Install](https://linux.how2shout.com/how-to-install-wordpress-on-ubuntu-22-04-lts-server/)
