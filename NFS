@@ -1,7 +1,7 @@
-
-sudo apt-get upgrade
-sudo apt-get update
-sudo apt-get install ssh
+sudo su
+apt-get upgrade
+apt-get update
+apt-get install ssh
 adduser viktor
 
 ...
@@ -12,3 +12,30 @@ sudo apt install nfs-common
 ssh-keygen
 ...
 ssh-copy-id -i /home/viktor/.ssh/id_rsa.pub wiktor@domain
+exit
+apt update
+apt install nfs-kernel-server
+mkdir /var/nfs/archives -p
+chown nobody:nogroup /var/nfs/archives
+nano /etc/exports
+```
+/var/nfs/archives   client_ip(rw,sync,no_subtree_check)
+/home               client_ip(rw,sync,no_root_squash,no_subtree_check)
+```
+systemctl restart nfs-kernel-server
+sudo ufw allow from client_ip to any port nfs
+sudo ufw status
+su viktor
+sudo mkdir -p /nfs/archives
+sudo mkdir -p /nfs/home
+sudo mount host_ip:/var/nfs/archives /nfs/archives
+sudo mount host_ip:/home /nfs/home
+df -h - check what direcotries are share
+
+After reboot start up 
+sudo vi /etc/fstab
+```
+...
+host_ip:/var/nfs/general    /nfs/general   nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+host_ip:/home               /nfs/home      nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
+```
