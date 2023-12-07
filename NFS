@@ -3,10 +3,9 @@ apt-get upgrade
 apt-get update
 apt-get install ssh
 adduser viktor
-
+usermod -aG sudo viktor
 ...
 su viktor
-usermod -aG sudo viktor
 sudo apt update
 sudo apt install nfs-common
 ssh-keygen
@@ -39,3 +38,10 @@ sudo vi /etc/fstab
 host_ip:/var/nfs/general    /nfs/general   nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
 host_ip:/home               /nfs/home      nfs auto,nofail,noatime,nolock,intr,tcp,actimeo=1800 0 0
 ```
+
+kopiowanie:
+sudo chmod -R 777 plik.txt
+sudo systemctl restart nfs-kernel-server
+sudo dd if=/dev/zero of=test.data bs=1G count=1 
+scp /sciezka do pliku uzytkownik@ip:/scizka do docelowego folderu
+
