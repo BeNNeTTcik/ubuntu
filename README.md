@@ -52,8 +52,19 @@ Settings -> Network -> Connected to: Host Only -> Name:VirtualBox Host-Only Ethe
 ![image](https://github.com/BeNNeTTcik/ubuntu_apache/assets/42866234/4d05faa0-8aee-4dd7-9cc6-d3fbcb649f49)
 
 Define two domain: 
- - Linux - ```vi /etc/hosts``` add <IP> mojastrona.pl www.mojastrona.pl and <IP> szyfrowana.pl www.szyfrowana.pl. IP u can check by command: ```hostname -I```\
- - Windows C:\Windows\System32\drivers\etc\hosts add <IP> mojastrona.pl www.mojastrona.pl and <IP> szyfrowana.pl www.szyfrowana.pl.\
+ - Linux - ```vi /etc/hosts``` add <IP> mojastrona.pl www.mojastrona.pl and <IP> szyfrowana.pl www.szyfrowana.pl. IP u can check by command: ```hostname -I```, example below.\
+```
+...
+ip_address mojastrona.pl www.mojastrona.pl
+ip_address szyfrowana.pl www.szyfrowana.pl
+```
+ 
+ - Windows C:\Windows\System32\drivers\etc\hosts add <IP> mojastrona.pl www.mojastrona.pl and <IP> szyfrowana.pl www.szyfrowana.pl. Example below:\
+```
+...
+ip_address mojastrona.pl www.mojastrona.pl
+ip_address szyfrowana.pl www.szyfrowana.pl
+```
 
 **Basic information about Apache2 and directories, which is used.**
 
