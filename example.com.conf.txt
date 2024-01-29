@@ -1,8 +1,13 @@
 <VirtualHost *:80>
-Serveradmin admin@mojastrona.pl
-ServerName mojastrona.pl
-ServerAlias www.mojastrona.pl
-DocumentRoot /var/www/mojastrona.pl/public_html/
-ErrorLog ${APACHE_LOG_DIR}/error.log
-CustomLog ${APACHE_LOG_DIR}/access.log combined
+	Serveradmin admin@mojastrona.pl
+	ServerName mojastrona.pl
+	ServerAlias www.mojastrona.pl
+	DocumentRoot /var/www/mojastrona.pl/public_html/
+	<Directory /var/www/mojastrona.pl/public_html>
+   		Options FollowSymLinks MultiViews
+   		AllowOverride All
+  		Require all granted
+	</Directory>
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
