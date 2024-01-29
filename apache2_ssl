@@ -1,7 +1,7 @@
 apache2_ssl
 
 sudo a2enmod ssl
-sudo a2enmod rewrite
+
 
 ```
 < VirtualHost *:80 >
